@@ -55,7 +55,7 @@ def parse_visible_rows(page, target_crns, found_courses):
 
 def check_portal():
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)
+        browser = p.chromium.launch(headless=True)
         page = browser.new_page()
         
         found_courses = {}
