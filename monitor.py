@@ -68,7 +68,7 @@ def check_portal():
         beirut_header = page.locator("text='CAMPUS: Beirut'").first
         if beirut_header.is_visible():
             beirut_header.click()
-            page.wait_for_timeout(10000) # Strict 10-second requirement
+            page.wait_for_timeout(15000) # Strict 10-second requirement
             
         # ----------------------------------------------------
         # PATH 1: UNIVERSITY ELECTIVES
@@ -77,13 +77,13 @@ def check_portal():
         elective_faculty = page.locator("text='FACULTY: University Elective Courses'").first
         if elective_faculty.is_visible():
             elective_faculty.click()
-            page.wait_for_timeout(10000)
+            page.wait_for_timeout(15000)
             
         print("Expanding Attribute: University Elective Courses...")
         elective_attr = page.locator("text='ATTRIBUTE: University Elective Courses'").first
         if elective_attr.is_visible():
             elective_attr.click()
-            page.wait_for_timeout(10000)
+            page.wait_for_timeout(15000)
             
         print("Scraping Elective rows...")
         parse_visible_rows(page, UNIVERSITY_ELECTIVE_CRNS, found_courses)
@@ -95,13 +95,13 @@ def check_portal():
         faculty_header = page.locator("text='FACULTY: Business Administration'").first
         if faculty_header.is_visible():
             faculty_header.click()
-            page.wait_for_timeout(10000)
+            page.wait_for_timeout(15000)
             
         print("Expanding Attribute: General Business Core Courses...")
         attr_header = page.locator("text='ATTRIBUTE: General Business Core Courses'").first
         if attr_header.is_visible():
             attr_header.click()
-            page.wait_for_timeout(10000)
+            page.wait_for_timeout(15000)
             
         print("Scraping Business Core rows...")
         parse_visible_rows(page, BUSINESS_CORE_CRNS, found_courses)
