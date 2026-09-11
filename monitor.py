@@ -1,5 +1,6 @@
 import os
 import requests
+import time
 from datetime import datetime
 from playwright.sync_api import sync_playwright
 
@@ -132,4 +133,6 @@ def check_portal():
         browser.close()
 
 if __name__ == "__main__":
-    check_portal()
+    while True:
+        check_portal()
+        time.sleep(600)
