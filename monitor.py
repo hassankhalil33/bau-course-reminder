@@ -5,8 +5,8 @@ from datetime import datetime
 from playwright.sync_api import sync_playwright
 
 # ==================== CONFIGURATION ====================
-BUSINESS_CORE_CRNS = ["10502", "10522", "10585"]  # Business Administration Core
-UNIVERSITY_ELECTIVE_CRNS = ["10337", "10336"]  # University Elective Courses
+BUSINESS_CORE_CRNS = ["10522"]  # Business Administration Core
+UNIVERSITY_ELECTIVE_CRNS = ["10337"]  # University Elective Courses
 
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")  # Your exact bot token string
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")     # Your exact numeric chat ID string
