@@ -10,7 +10,7 @@ BUSINESS_CORE_CRNS = [
 ]  # Business Administration Core
 
 UNIVERSITY_ELECTIVE_CRNS = [
-    "10337"
+    
 ]  # University Elective Courses
 
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")  # Your exact bot token string
